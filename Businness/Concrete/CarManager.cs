@@ -18,7 +18,7 @@ namespace Businness.Concrete
 
         public void Add(Car car)
         {
-            Console.WriteLine("Başarıyla Eklendi");
+            _carDal.Add(car);
         }
 
         public void Delete(Car car)
