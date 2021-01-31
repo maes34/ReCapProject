@@ -23,16 +23,22 @@ namespace Businness.Concrete
 
         public void Delete(Car car)
         {
-            Console.WriteLine("Başarıyla Silindi");
+            _carDal.Delete(car);
         }
 
         public List<Car> GetAll()
         {
             return _carDal.GetAll();
         }
+
+        public Car GetById(int id)
+        {
+            return _carDal.GetById(id);
+        }
+
         public void Update(Car car)
         {
-            Console.WriteLine("Başarıyla Güncellendi");
+           _carDal.Update(car);
         }
     }
 }
